@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Core">
+      <UniqueIdentifier>{e589ff60-b488-4c9e-82c5-7f2a28631078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Core">
+      <UniqueIdentifier>{27fb411a-ef52-4e3a-b33f-31796893aa41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Libs">
+      <UniqueIdentifier>{fa420249-0646-4551-972c-38e343eb286a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Libs">
+      <UniqueIdentifier>{f0298885-726e-405e-9b22-4f7dffa81131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Libs\sqlite3">
+      <UniqueIdentifier>{a40e489d-8a69-411b-b6e0-7dd85b6b195a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Libs\sqlite3">
+      <UniqueIdentifier>{ec02572b-e95d-4b13-908a-68181a622fad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FriedDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Fried.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Fried.Core\ImageSegmenter.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Fried.Core\Common.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Fried.Core\FeatureExtractor.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Fried.Core\MachineLearner.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\sqlite3\sqlite3.h">
+      <Filter>헤더 파일\Libs\sqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\sqlite3\CppSQLite3U.h">
+      <Filter>헤더 파일\Libs\sqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Fried.Core\Fried.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FriedDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Fried.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Fried.Core\ImageSegmenter.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Fried.Core\FeatureExtractor.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Fried.Core\MachineLearner.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Libs\sqlite3\CppSQLite3U.cpp">
+      <Filter>소스 파일\Libs\sqlite3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Fried.MFC.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\FriedMFC.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Fried.MFC.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
