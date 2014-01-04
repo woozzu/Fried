@@ -72,6 +72,9 @@
     <ClInclude Include="..\..\Fried.Core\Fried.h">
       <Filter>헤더 파일\Core</Filter>
     </ClInclude>
+    <ClInclude Include="C2dSliderCtrl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FriedDlg.cpp">
@@ -95,6 +98,9 @@
     <ClCompile Include="Libs\sqlite3\CppSQLite3U.cpp">
       <Filter>소스 파일\Libs\sqlite3</Filter>
     </ClCompile>
+    <ClCompile Include="C2dSliderCtrl.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Fried.MFC.rc">
@@ -108,6 +114,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\Fried.MFC.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\icon_cross.ico">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>

@@ -26,26 +26,32 @@ namespace munchkin
 			}
 		}
 		normalize(Mat(linHist), hist);
+		transpose(hist, hist);
 	}
 
 	void FeatureExtractor::GetHOGHist(const Mat& image, Mat& hist)
 	{
-		Mat resized;
+		Mat resized, resizedGray;
 		vector<float> descriptors;
 		resize(image, resized, Size(64, 128));
-		cvtColor(resized, resized, CV_RGB2GRAY);
+		cvtColor(resized, resizedGray, CV_RGB2GRAY);
 
 		HOGDescriptor hog;
-		hog.compute(resized, descriptors);
+		hog.compute(resizedGray, descriptors);
 		normalize(Mat(descriptors), hist);
+		transpose(hist, hist);
 	}
 
 	void FeatureExtractor::GetFeatures_linHSVhist_hog(const Mat& image, Mat& feature)
 	{
+		GetFeatures_linHSVhist_hog(image, feature, 30, 26, 4);
+	}
+
+	void FeatureExtractor::GetFeatures_linHSVhist_hog(const Mat& image, Mat& feature, int hbins, int sbins, int vbins)
+	{
 		Mat hsvHist, hogHist;
-		GetLinHSVHist(image, hsvHist, 30, 26, 4);
+		GetLinHSVHist(image, hsvHist, hbins, sbins, vbins);
 		GetHOGHist(image, hogHist);
-		vconcat(hsvHist, hogHist, feature);
-		transpose(feature, feature);
+		hconcat(hsvHist, hogHist, feature);
 	}
 }

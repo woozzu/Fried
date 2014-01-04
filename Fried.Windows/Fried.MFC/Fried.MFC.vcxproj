@@ -109,6 +109,7 @@
     <ClInclude Include="..\..\Fried.Core\Fried.h" />
     <ClInclude Include="..\..\Fried.Core\ImageSegmenter.h" />
     <ClInclude Include="..\..\Fried.Core\MachineLearner.h" />
+    <ClInclude Include="C2dSliderCtrl.h" />
     <ClInclude Include="Fried.h" />
     <ClInclude Include="FriedDlg.h" />
     <ClInclude Include="Libs\sqlite3\CppSQLite3U.h" />
@@ -127,6 +128,7 @@
     <ClCompile Include="..\..\Fried.Core\MachineLearner.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="C2dSliderCtrl.cpp" />
     <ClCompile Include="Fried.cpp" />
     <ClCompile Include="FriedDlg.cpp" />
     <ClCompile Include="Libs\sqlite3\CppSQLite3U.cpp" />
@@ -143,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\Fried.MFC.ico" />
+    <Image Include="res\icon_cross.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

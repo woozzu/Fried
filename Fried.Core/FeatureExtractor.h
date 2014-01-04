@@ -9,5 +9,6 @@ namespace munchkin
 		static void GetHOGHist(const Mat& image, Mat& hist);
 
 		static void GetFeatures_linHSVhist_hog(const Mat& image, Mat& feature);
+		static void GetFeatures_linHSVhist_hog(const Mat& image, Mat& feature, int hbins, int sbins, int vbins);
 	};
 }
